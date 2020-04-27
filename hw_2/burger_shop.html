@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eShop</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="scripts/MenuItem.js"></script>
+    <script src="scripts/SubMenu.js"></script>
+    <script src="scripts/Menu.js"></script>
+    <script src="scripts/main_hamburger.js" defer></script>
+</head>
+<body class="bg-secondary">
+    <header class="header">
+        <nav id="primary_nav_wrap">
+        </nav>
+        <div class="header_cart">
+            <div class="btn_body">
+                <a class="btn_inside" href="#">Add to cart</a>
+            </div>
+            <img src="img/cart%20(2).svg" alt="cart">
+        </div>
+    </header>
+    <section class="container">
+        <h3 class="tac">Choose burger</h3>
+    </section>
+    <main class="container-fluid ">
+        <br>
+
+        <div class="form">
+            <form id="form">
+                <hr>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="size" id="big" value="big" checked>
+                    Big
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="size" id="small" value="small">
+                    Small
+                </div>
+                <hr>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input pick" id="cheese" value="cheese" checked>
+                    Cheese
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input pick" id="salad" value="salad">
+                    Lattuce
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input pick" id="potato" value="potato">
+                    Potato
+                </div>
+                <hr>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input pick" id="spice" value="spice">
+                    Spice
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input pick" id="mayo" value="mayo">
+                    Lattuce
+                </div>
+                <hr>
+                <div id="result">
+                    <div><b>Coast:</b> <span id="price">0</span> р.</div>
+                    <div><b>Сalorie content:</b> <span id="calorie">0</span> kcal</div>
+                </div>
+                <hr>
+                <button type="submit" class="btn btn-primary">Clear</button>
+            </form>
+        </div>
+    </main>
+    <script src="scripts/hamburger_config.js"></script>
+    <script src="scripts/Hamburger.js"></script>
+    <script src="scripts/hamburger_script.js"></script>
+</body>
+</html>
