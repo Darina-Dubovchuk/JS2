@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eShop</title>
+
+    <link rel="stylesheet" href="style/style.css">
+
+    <script defer src="scripts/goods_config.js" ></script>
+    <script defer src="scripts/MenuItem.js"></script>
+    <script defer src="scripts/Menu.js"></script>
+    <script defer src="scripts/ProductItem.js" ></script>
+    <script defer src="scripts/ProductList.js" ></script>
+    <script defer src="scripts/CartItem.js"></script>
+    <script defer src="scripts/Cart.js"></script>
+    <script defer src="scripts/main.js" ></script>
+    <script defer src="scripts/getWithPromis.js"></script>
+
+</head>
+
+<body class="bg-secondary">
+    <header class="header">
+        <nav id="primary_nav_wrap">
+        </nav>
+        <div id="cart_info">
+        </div>
+        <div class="header_cart">
+            <div class="btn_body">
+                <a class="btn_inside" href="#">Add to cart</a>
+            </div>
+            <img src="img/cart%20(2).svg" alt="cart">
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <h3 class="tac">Bestsellers</h3>
+            <div class="goods-list products"></div>
+        </section>
+        <section class="container">
+             <div  id="cart_window"> 
+                        <div class="cart-header">
+                            <h3>Items in the cart</h3>
+                        </div>
+                        <div class="cart-body">
+                            <div id="cart-list"></div>
+                            <div id="cart-results"></div>
+                        </div>
+                        <div class="cart-footer">
+                            <button type="button" class="btn btn-primary">Сheck </button>
+                        </div>
+            </div> 
+        </section>
+       
+    </main>
+</body>
+
+</html>
